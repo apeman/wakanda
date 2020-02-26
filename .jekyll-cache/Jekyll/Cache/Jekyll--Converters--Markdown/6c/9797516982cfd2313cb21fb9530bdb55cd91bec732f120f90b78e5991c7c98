@@ -1,0 +1,12 @@
+I"	<p>Shenzhen now has 16,000 electric buses in total and is noticeably quieter for it. “We find that the buses are so quiet that people might not hear them coming,” says Joseph Ma, deputy general manager at Shenzhen Bus Group, the largest of the three main bus companies in the city.</p>
+
+<div class="language-perl highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#!/usr/bin/perl</span>
+
+<span class="k">sub </span><span class="nf">print_hello</span> <span class="p">{</span>
+    <span class="k">print</span> <span class="p">"</span><span class="s2">Hello, Jekyll!</span><span class="se">\n</span><span class="p">";</span>
+<span class="p">}</span>
+
+<span class="nv">print_hello</span><span class="p">;</span>
+</code></pre></div></div>
+
+:ET

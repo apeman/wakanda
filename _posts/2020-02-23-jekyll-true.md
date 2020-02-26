@@ -1,26 +1,11 @@
 ---
 layout: post
-title:  "Jekyll true"
+title:  "Shenzhen's silent revolution..."
 date:   2020-02-23 12:10:40 +0530
 ---
 
-True minimal theme is extremely lightweight and ascetic jekyll theme.
+Shenzhen now has 16,000 electric buses in total and is noticeably quieter for it. “We find that the buses are so quiet that people might not hear them coming,” says Joseph Ma, deputy general manager at Shenzhen Bus Group, the largest of the three main bus companies in the city.
 
-This theme has only one css file, which is used for source code highlighting. 
-
-
-# Heading 1
-## Heading 2
-### Heading 3
-
-List of entries:
-
-- item 1
-- item 2
-- item 3
-- item 4
-
-Source code are highlighted:
 
 ```perl
 #!/usr/bin/perl

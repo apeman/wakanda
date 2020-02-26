@@ -3,6 +3,10 @@
 
 <head>
     <meta charset='utf-8'>
+    <meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" id="viewport" name="viewport">
+    <meta content="yes" name="mobile-web-app-capable">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
     <title>
         {% if page.title %}
             {{ page.title }}
@@ -16,14 +20,14 @@
     <link rel='stylesheet' href='{{ site.url }}/assets/css/style.css' type='text/css'>
     {% endif %}
     
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
 
 </head>
 
 <body>
     {% include header.html %}
-
+<main>
     {{ content }}
+</main>
 <hr>
     <p><small> <i>Build with <a href="https://jekyllrb.com/">Jekyll</a> and  <a href="https://github.com/cyevgeniy/jekyll-true-minimal/">true minimal theme</a></i> </small></p>
 </body>
