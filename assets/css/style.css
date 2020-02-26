@@ -24,10 +24,6 @@
         body::-webkit-scrollbar-thumb {
         background-color: #555;
         }
-           h1, h2, h3, h4, h5 {
-    clear: both;
-    line-height: 1.4;
-    }
     header, main {
         display: block;
         margin: 0 auto;
@@ -105,10 +101,16 @@ hr {
 
 a, a:link, a:visited {
     line-height: 1.2em;
-    text-decoration: none;
+    text-decoration: dotted;
     vertical-align: top;
     margin-top: 4px;
 }
+h1, h2, h3, h4, h5 {
+    clear: both;
+    color: #000000;
+    line-height: 1.4;
+    font-weight: normal;
+    }
 
 section h2 {
     color: #001ba0;
