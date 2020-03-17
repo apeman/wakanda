@@ -1,28 +1,62 @@
-name: "LiveKpop"
-description: "Learn Korean and Programming"
+site: Loonaverse
+url: #yoururl
+title: Loonaverse
+description: Simple and minimalistic jekyll blog.
+twitter:
+  username: #yourusername
+  card: summary
+  creator: #yourusername
+author:
+  twitter: #yourusername
+  name: #yourusername
+  avatar:
+  email: #youremail
+  url: #yoururl
+permalink: pretty
 
-url: '' 
-baseurl: ''
+baseurl: ""
 
-markdown: kramdown
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
-highlighter: rouge
+highlighter: none
 
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
+exclude:
+  - .jekyll-cache
+  
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+
+sass:
+  sass_dir:          _sass
+  style:            :compressed
 
 plugins:
   - jekyll-paginate
-paginate: 10
-paginate_path: /page-:num
+  - jekyll-seo-tag
+  - jekyll-sitemap  
 
-#disqus-id: your-disqus-id
-
-source: .
-destination: ./_site
-
-sass:
-    style: :compressed
-    sass_dir: assets/css/
-
+collections:
+  pages:
+    output: true
+    permalink: /:name
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:slug
+  
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"

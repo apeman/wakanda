@@ -1,23 +1,27 @@
 ---
-layout: default
+layout: page
 title: Archive
 ---
-<!-- Original snippet for generating archive page found here:
-https://gist.github.com/tuananh/743255://gist.github.com/tuananh/7432553 -->
 
-	<h2>Archive</h2>
-	<ul>
-	  {% for post in site.posts %}
-	    {% unless post.next %}
-	      <h3>{{ post.date | date: '%Y-%m' }}</h3>
-	    {% else %}
-	      {% capture year %}{{ post.date | date: '%Y-%m' }}{% endcapture %}
-	      {% capture nyear %}{{ post.next.date | date: '%Y-%m' }}{% endcapture %}
-	      {% if year != nyear %}
-	        <h3>{{ post.date | date: '%Y-%m' }}</h3>
-	      {% endif %}
-	    {% endunless %}
-
-	    <li><a href="{{site.url}}{{ post.url }}">{{ post.title }}</a></li>
-	  {% endfor %}
-	</ul>
+<div class="archive">
+    <div class="archive-list">
+        {% if site.posts.size == 0 %}
+            <h2>No post found</h2>
+        {% else %}
+            {% for post in site.posts %}
+                <div class="archive-list-post">
+                    {% if post.link %}
+                        <a href="{{ post.link }}">
+                    {% else %}
+                        <a href="{{ post.url | prepend: site.baseurl }}">
+                    {% endif %}  
+                        <span class="archive-list-post-title">{{ post.title }}</span>
+                        <span class="archive-list-post-date">
+                            <time>| {{ post.date | date_to_string }}</time>
+                        </span>
+                    </a>
+                </div>
+            {% endfor %}
+        {% endif %}
+    </div>
+</div>
